@@ -19,11 +19,10 @@ defmodule SurfaceBlogWeb.Components.Counter do
   end
 
   def handle_event("inc", _value, socket) do
-    {:noreply, update(socket, :count, & &1 + 1)}
+    {:noreply, update(socket, :count, &(&1 + 1))}
   end
 
   def handle_event("dec", _value, socket) do
-    {:noreply, update(socket, :count, & &1 - 1)}
+    {:noreply, update(socket, :count, &(&1 - 1))}
   end
-
 end

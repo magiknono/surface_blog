@@ -1,8 +1,22 @@
+<Hero>
+ <template slot="title">Surface</template>
+ <template slot="subtitle">components</template>
+</Hero>
+
 <h1>a default State lessButton component</h1>
 <ButtonDefault />
+
 <h1>Button component</h1>
 <Button />
+
+<Button>
+    <blockquote>content click me</blockquote>
+</Button>
+
 <Button color="is-black"  />
+
 <h1>Stateful Button component</h1>
+
 <Button color="is-primary" rounded={{ @rounded }} />
+
 <Button color={{ "is-success" }} loading={{ @loading }} />
