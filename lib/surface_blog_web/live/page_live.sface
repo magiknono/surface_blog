@@ -20,3 +20,9 @@
 <Button color="is-primary" rounded={{ @rounded }} />
 
 <Button color={{ "is-success" }} loading={{ @loading }} />
+
+<Card>
+  <Title>A typed slot </Title>
+  <Content>with Content</Content>
+  <template slot="subtitle">a random subtitle with named slot</template>
+</Card>
