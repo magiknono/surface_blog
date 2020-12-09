@@ -1,5 +1,5 @@
 defmodule SurfaceBlogWeb.PageLive do
    use Surface.LiveView
-   alias SurfaceBlogWeb.Components.Button
+   alias SurfaceBlogWeb.Components.ButtonDefault, as: Button
 
 end
