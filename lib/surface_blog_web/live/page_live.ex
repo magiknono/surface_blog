@@ -3,4 +3,9 @@ defmodule SurfaceBlogWeb.PageLive do
    alias SurfaceBlogWeb.Components.ButtonDefault
    alias SurfaceBlogWeb.Components.ButtonBase, as: Button
 
+   data rounded, :boolean, default: true
+   def mount(socket) do
+    socket = Surface.init(socket)
+    {:ok, socket}
+   end
 end

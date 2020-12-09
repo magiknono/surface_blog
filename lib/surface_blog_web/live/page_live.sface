@@ -1,4 +1,5 @@
 <h1>a default Button component</h1>
 <ButtonDefault />
 <Button />
-<Button color="is-black" />
+<Button color="is-black"  />
+<Button color="is-primary" rounded={{ @rounded }} />
