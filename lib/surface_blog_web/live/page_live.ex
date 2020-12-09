@@ -3,6 +3,7 @@ defmodule SurfaceBlogWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
+    socket = Surface.init(socket)
     {:ok, assign(socket, query: "", results: %{})}
   end
 
