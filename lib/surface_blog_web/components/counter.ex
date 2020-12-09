@@ -1,7 +1,8 @@
 defmodule SurfaceBlogWeb.Components.Counter do
-  use Surface.Component
+  use Surface.LiveComponent
 
   data count, :integer, default: 0
+  prop click, :event
 
   def render(assigns) do
     ~H"""
