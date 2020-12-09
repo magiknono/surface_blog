@@ -5,6 +5,7 @@ defmodule SurfaceBlogWeb.PageLive do
 
    data rounded, :boolean, default: true
    data loading, :boolean, default: true
+
    def mount(socket) do
     socket = Surface.init(socket)
     {:ok, socket}
