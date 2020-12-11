@@ -1,28 +1,44 @@
-<Hero>
- <template slot="title">Surface</template>
- <template slot="subtitle">components</template>
-</Hero>
+<header>
+  <Navbar />
+</header>
 
-<h1>a default State lessButton component</h1>
-<ButtonDefault />
+<main>
+  <Hero>
+    <template slot="title">Surface</template>
+    <template slot="subtitle">live_view components supercharged</template>
+  </Hero>
 
-<h1>Button component</h1>
-<Button />
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <h1>a default State lessButton component</h1>
+          <ButtonDefault />
 
-<Button>
-    <blockquote>content click me</blockquote>
-</Button>
+          <h1>Button component</h1>
+          <Button />
 
-<Button color="is-black"  />
+          <Button>
+              <blockquote>content click me</blockquote>
+          </Button>
 
-<h1>Stateful Button component</h1>
+          <Button color="is-black"  />
+          
+          <h1>Stateful Button component</h1>
 
-<Button color="is-primary" rounded={{ @rounded }} />
+          <Button color="is-primary" rounded={{ @rounded }} />
 
-<Button color={{ "is-success" }} loading={{ @loading }} />
+          <Button color={{ "is-success" }} loading={{ @loading }} />
+        </div>
+        <div class="column is-half">
+          <Card>
+            <Title>A typed slot </Title>
+            <Content>with Content</Content>
+            <template slot="subtitle">a random subtitle with named slot</template>
+          </Card>
+        </div>
 
-<Card>
-  <Title>A typed slot </Title>
-  <Content>with Content</Content>
-  <template slot="subtitle">a random subtitle with named slot</template>
-</Card>
+      </div>
+    </div>
+  </div>
+</main>

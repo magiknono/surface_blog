@@ -5,7 +5,7 @@ defmodule SurfaceBlogWeb.Components.CardBase do
 
   def render(assigns) do
     ~H"""
-    <div class="card is-primary">
+    <div class="card">
       <div class="card-content">
         <div class="media">
           <div class="media-left">
