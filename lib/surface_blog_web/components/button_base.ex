@@ -19,6 +19,8 @@ defmodule SurfaceBlogWeb.Components.ButtonBase do
   prop rounded, :boolean
   prop loading, :boolean
 
+  slot default
+
   def render(assigns) do
     ~H"""
     <button class={{ "button", @color, "is-rounded": @rounded, "is-loading": @loading }}>

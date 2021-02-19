@@ -1,7 +1,10 @@
 defmodule SurfaceBlogWeb.Components.CardBase do
   use Surface.Component
 
+  slot title
   slot subtitle
+  slot content
+
 
   def render(assigns) do
     ~H"""
