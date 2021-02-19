@@ -1,4 +1,5 @@
 defmodule SurfaceBlogWeb.Router do
+  import Surface.Catalogue.Router
   use SurfaceBlogWeb, :router
 
   pipeline :browser do
@@ -24,4 +25,12 @@ defmodule SurfaceBlogWeb.Router do
   # scope "/api", SurfaceBlogWeb do
   #   pipe_through :api
   # end
+
+  # surface catalog
+  if Mix.env() == :dev do
+    scope "/" do
+      pipe_through :browser
+      surface_catalogue "/catalogue"
+    end
+  end
 end
